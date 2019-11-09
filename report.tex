@@ -1,0 +1,304 @@
+\documentclass{report}
+\include{preamble}
+
+\title{\LectureTitle: Project 3}
+
+\begin{document}
+\maketitle
+\newpage
+
+\section{ Exercise 1}
+
+\subsection{A}
+This is the time-of-day factor of HD.
+\begin{figure}[H]
+        \centering 
+         \includegraphics[width=0.7\textwidth]{figures//1A_HD}
+\end{figure}
+This is the time-of-day factor of VZ.
+\begin{figure}[H]
+        \centering 
+         \includegraphics[width=0.7\textwidth]{figures//1A_VZ}
+\end{figure}
+
+\subsection{B}
+This is daily diffusive returns of HD. $ \alpha = 4.5$.
+\begin{figure}[H]
+        \centering 
+         \includegraphics[width=0.7\textwidth]{figures//1Brc_HD}
+\end{figure}
+
+This is daily jump returns of HD. $ \alpha = 4.5$.
+\begin{figure}[H]
+        \centering 
+         \includegraphics[width=0.7\textwidth]{figures//1Brd_HD}
+\end{figure}
+
+This is daily diffusive returns of VZ. $ \alpha = 4.5$.
+\begin{figure}[H]
+        \centering 
+         \includegraphics[width=0.7\textwidth]{figures//1Brc_VZ}
+\end{figure}
+
+This is daily jump returns of VZ. $ \alpha = 4.5$.
+\begin{figure}[H]
+        \centering 
+         \includegraphics[width=0.7\textwidth]{figures//1Brd_VZ}
+\end{figure}
+
+\subsection{C}
+1. From the data of HD, we can find 18 jumps in 2007, 10 jumps in 2008,  9 jumps in 2009, 4 jumps in 2010, 6 jumps in 2011, 15 jumps in 2012, 12 jumps in 2013, 12 jumps in 2014, 7 jumps in 2015, 14 jumps in 2016, 8 jumps in 2017.\\
+From the data of VZ, we can find 11 jumps in 2007, 11 jumps in 2008,  10 jumps in 2009, 17 jumps in 2010, 11 jumps in 2011, 13 jumps in 2012, 16 jumps in 2013, 15 jumps in 2014, 9 jumps in 2015, 8 jumps in 2016, 14 jumps in 2017.\\
+2. No. For example, the number of jumps in 2008 was not higher compared to other ordinary years.\\
+3. Yes. Jumps are approximately evenly distributed.
+
+\subsection{D}
+1. Density function gives the density of a continuous random variable. Integrate it we can get cumulative distribution function. Use either of them we can easily get the probability of a measurable set.\\
+2. I expect it like a normal distribution. According to the Guassian Diffusion theory, returns follow normal distribution everyday. \\
+3. I expect the density of the jump returns have two peaks, one smaller than zero and one bigger than zero. The jump returns are expected to be high so the peak will deviate from zero. Also, it should include a negative peak and a positive peak. 
+
+\subsection{E}
+This is the diffusive returns and jump returns distribution of HD. The diffusive returns distribution centered at 0, most values fall in [-0.01, 0.01]. However, the smallest returns is approximately -0.04 and the biggest returns is approximately 0.06. Most jump returns fall in [-0.02,0) and (0, 0.02]. The distribution has two peaks. One is between - 0.01 and 0, the other one is between 0 and 0.01.  It looks strange since it has two peaks and barely has no zero.
+\begin{figure}[H]
+        \centering 
+         \includegraphics[width=0.7\textwidth]{figures//1Erc_HD}
+\end{figure}
+
+This is the diffusive returns and jump returns distribution of VZ. The diffusive returns distribution centered at 0, most values fall in [-0.01, 0.01]. However, the smallest returns is approximately -0.04 and the biggest returns is approximately 0.04. Most jump returns fall in [-0.02,0) and (0, 0.02]. The distribution has two peaks. One is between - 0.01 and 0, the other one is between 0 and 0.01.  It looks strange since it has two peaks and barely has no zero.
+\begin{figure}[H]
+        \centering 
+         \includegraphics[width=0.7\textwidth]{figures//1Erc_VZ}
+\end{figure}
+
+
+\subsection{F}
+According to the density plots of jump returns, this belief is wrong. The plots are nearly symmetric so the positive jump returns happens as much as and as large as negative jump returns.
+
+\section{ Exercise 2}
+
+\subsection{A}
+This is the Truncated Variance of HD.
+\begin{figure}[H]
+        \centering 
+         \includegraphics[width=0.7\textwidth]{figures//2A_HD}
+\end{figure}
+
+This is the Truncated Variance of VZ.
+\begin{figure}[H]
+        \centering 
+         \includegraphics[width=0.7\textwidth]{figures//2A_VZ}
+\end{figure}
+
+\subsection{B}
+This is the truncated variance and realized variance of HD. We can easily recognize that RV and TV have similar dynamics and RV is always bigger than TV.
+\begin{figure}[H]
+        \centering 
+         \includegraphics[width=0.7\textwidth]{figures//2B_HD}
+\end{figure}
+
+This is the truncated variance and realized variance of VZ. We can easily recognize that RV and TV have similar dynamics and RV is always bigger than TV.
+\begin{figure}[H]
+        \centering 
+         \includegraphics[width=0.7\textwidth]{figures//2B_HD}
+\end{figure}
+
+
+\subsection{C}
+This is 95\% confidence interval for the integrated variance based on the asymptotic distribution of the truncated variance of HD.
+\begin{figure}[H]
+        \centering 
+         \includegraphics[width=0.7\textwidth]{figures//2C_HD}
+\end{figure}
+
+This is 95\% confidence interval for the integrated variance based on the asymptotic distribution of the truncated variance of VZ.
+\begin{figure}[H]
+        \centering 
+         \includegraphics[width=0.7\textwidth]{figures//2C_VZ}
+\end{figure}
+
+\subsection{D}
+This is 95\% confidence interval for the integrated variance based on the asymptotic distribution of the truncated variance of HD in Oct.2008. We can tell from the plot that the confidence interval is larger when truncated variance is high, which makes it harder to give a preciser actual truncated variance.
+\begin{figure}[H]
+        \centering 
+         \includegraphics[width=0.7\textwidth]{figures//2D_HD}
+\end{figure}
+
+This is 95\% confidence interval for the integrated variance based on the asymptotic distribution of the truncated variance of VZ in Oct.2008. We can tell from the plot that the confidence interval is larger when truncated variance is high, which makes it harder to give a preciser actual truncated variance.
+\begin{figure}[H]
+        \centering 
+         \includegraphics[width=0.7\textwidth]{figures//2D_VZ}
+\end{figure}
+
+\subsection{E}
+1. For the truncated variance ($ TV_{t} $).\\
+2. No. I didn't annualize TV and confidence interval.\\
+3. Since annualize transformation is not linear, I cannot simply multiply the confidence interval as before. Thus, I did not annualize the values.
+
+\subsection{F}
+1. We can get asymptotic distribution of a new estimator transformed by a function with the help of Delta Method theorem.\\
+2. We need it because the annualize transformation is not linear.\\
+3. \[ g(x) = \sqrt{252x} .\]\\
+4. \[ g\prime(x) = \frac{\sqrt{252}}{2*\sqrt{x}} \]\\
+5. The asymptotic distribution is $ N ( 0, 2* \int_{t-1}^{t}c_{s}^{2}ds *g\prime(IV)^2) $.
+
+\subsection{G}
+
+The confidence interval for the annualized integrated variance is 
+\[ [ \sqrt{252TV_{t}} + q_{z}(\frac{\alpha}{2})*\sqrt{\frac{1}{6}*\sum_{i=1}^{n}(r_{t,i}^{c})^4*\frac{252}{TV_{t}}} , \sqrt{252TV_{t}} + q_{z}(1-\frac{\alpha}{2})*\sqrt{\frac{1}{6}*\sum_{i=1}^{n}(r_{t,i}^{c})^4*\frac{252}{TV_{t}}} ].  \]
+I did not annualize the confidence interval before.
+
+\subsection{H}
+
+This is the annualized TV and correct 95\% confidence interval of HD.
+\begin{figure}[H]
+        \centering 
+         \includegraphics[width=0.7\textwidth]{figures//2H_HD}
+\end{figure}
+
+This is the annualized TV and correct 95\% confidence interval of VZ.
+\begin{figure}[H]
+        \centering 
+         \includegraphics[width=0.7\textwidth]{figures//2H_VZ}
+\end{figure}
+
+\subsection{I}
+
+1. I will divide returns in a day into 11 groups. For each group,I will pick returns 7 times and construct a new group. After constructing a new daily returns, I will apply this method to 2769 days in the data. Then, I will calculate Truncated Variance for each day and get a set of TV. After that, I will repete this process for 10000 times to get a distribution of everyday TV. Using the distribution of TV, I can get the quantile and calculate the confidence interval for IV.\\
+2. I will annualize the intraday returns first and do the same thing as the previous question. Then I can get distirbution of annualized everyday TV. From this, I can calculate the confidence interval for annualized Integrated Variance. Or I can directly compute annulized TV quantile using daily TV quantile.\\
+3. I do not need to use Delta Method since I can simulate the annualized TV and get the distribution of annualized TV. Also, I can get daily TV and its distribution first and annualize it in the end since the quantile won't change with the annualize transformation.
+
+\subsection{J}
+
+This is truncated variance and confidence intervals of HD we get using bootstrap.
+\begin{figure}[H]
+        \centering 
+         \includegraphics[width=0.7\textwidth]{figures//2J_HD}
+\end{figure}
+
+This is truncated variance and confidence intervals of VZ we get using bootstrap.
+\begin{figure}[H]
+        \centering 
+         \includegraphics[width=0.7\textwidth]{figures//2J_VZ}
+\end{figure}
+
+\subsection{K}
+
+This is 95\% confidence interval for integrated variance of HD in Oct.2008 based on asymptotic distribution and on the bootstrap. From the plot, we notice that the upper bound and lower bound provided by two methods are quite similar. At most time, they nearly coincidence. 
+\begin{figure}[H]
+        \centering 
+         \includegraphics[width=0.7\textwidth]{figures//2K_HD}
+\end{figure}
+
+This is 95\% confidence interval for integrated variance of VZ in Oct.2008 based on asymptotic distribution and on the bootstrap. From the plot, we notice that the upper bound and lower bound provided by two methods are quite similar. At most time, they nearly coincidence. 
+\begin{figure}[H]
+        \centering 
+         \includegraphics[width=0.7\textwidth]{figures//2K_VZ}
+\end{figure}
+
+\section{ Exercise3}
+
+\subsection{A}
+This is  the simulated variance process.
+\begin{figure}[H]
+        \centering 
+         \includegraphics[width=0.7\textwidth]{figures//3A_Variance}
+\end{figure}
+
+This is the simulated prices.
+\begin{figure}[H]
+        \centering 
+         \includegraphics[width=0.7\textwidth]{figures//3A_Prices}
+\end{figure}
+
+\subsection{B}
+1. IV represent daily average variance or integrated variance of a day.\\
+2. We sum it up by part. We put same c for a small time period in the model we simulated. Thus, after summing them, we get the actual $ IV_{t} $.
+
+\subsection{C}
+This is the annualized actual IV for each day.
+\begin{figure}[H]
+        \centering 
+         \includegraphics[width=0.7\textwidth]{figures//3C}
+\end{figure}
+
+\subsection{D}
+These are the realized variance and actual integrated variance. From the plot, we can tell that RV and IV have quite similar dynamics. The RV seems fluctuate centered at IV. RV is an good estimator of IV since there is no jumps.
+\begin{figure}[H]
+        \centering 
+         \includegraphics[width=0.7\textwidth]{figures//3D}
+\end{figure}
+
+\subsection{E}
+
+The confidence interval for the annualized integrated variance is 
+\[ [ \sqrt{252RV_{t}} + q_{z}(\frac{\alpha}{2})*\sqrt{\frac{1}{6}*\sum_{i=1}^{n}(r_{t,i})^4*\frac{252}{RV_{t}}} , \sqrt{252RV_{t}} + q_{z}(1-\frac{\alpha}{2})*\sqrt{\frac{1}{6}*\sum_{i=1}^{n}(r_{t,i})^4*\frac{252}{RV_{t}}} ].  \]
+
+\subsection{F}
+Thes are the annualized IV and 95\% confidence interval for IV.
+\begin{figure}[H]
+        \centering 
+         \includegraphics[width=0.7\textwidth]{figures//3F}
+\end{figure}
+
+\subsection{G}
+
+1. I set $ seed = 2018$, then for 289 days in 315 days $ IV_{t}$ are within the confidence interval.\\
+2. Average coverage rate is \[ \frac{289}{315} = 0.9175 \].\\
+3. I think it is kind of close to expected 95\%.
+
+\subsection{H}
+This is the simulated prices with jumps.
+\begin{figure}[H]
+        \centering 
+         \includegraphics[width=0.7\textwidth]{figures//3H}
+\end{figure}
+
+\subsection{I}
+
+1. Average coverage rate is \[ \frac{284}{315} = 0.9016 \].\\
+2. The coverage rate decreases. From the plot, we can see the upper bound of confidence interval is much larger than IV at some particular points caused by jumps. 
+\begin{figure}[H]
+        \centering 
+         \includegraphics[width=0.7\textwidth]{figures//3I}
+\end{figure}
+3. Although the coverage rate decreases, the coverage rate is still larger than I expected. It decreases because RV contains jump returns, which means RV is not a good estimator of IV. The coverage rate is still high may because the range of confidence interval is larger this time, so it covers some integrated variance.\\
+4. Since RV is not a good estimator of IV because RV includes jump returns and the range of confidence interval is much larger, integrated variance cannot be infered from the confidence interval.
+
+\subsection{J}
+
+1. Average coverage rate is \[ \frac{211}{315} = 0.6698 \].\\
+2. The coverage rate drops a lot. From the plot, we can see at some points both the upper bound and lower bound of confidence interval is much larger than IV.\\
+\begin{figure}[H]
+        \centering 
+         \includegraphics[width=0.7\textwidth]{figures//3J}
+\end{figure}
+3. This time the coverage rate is pretty low as I expected since RV contains many jump returns and cannot give a good confidence interval of IV. \\
+4. Almost nothing about integrated variance can be infered from the confidence interval this time because there are too many jumps and RV includes jump returns. At some points lower bound even much larger than actual IV. Thus, we can infer almost nothing.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
